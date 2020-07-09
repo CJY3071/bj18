@@ -1,2 +1,14 @@
 hello ,这是一个测试。
 这是第二部测试，在GitHub中对提交文件的修改。
+使用github的几个步骤：
+1.生成密钥，先配置好git config,然后使用命令ssh-keygen -t rsa -C '邮箱地址'。
+2.将生成的公钥复制到github上。
+3.克隆项目：git clone 项目地址
+4.创建分支：git checkout -b 分支名。git branch 查看分支。
+5.创建文件并提交版本：touch code.txt、git add code.txt 、git commit -m '版本名'
+6.推送分支，git push origin 分支名称。
+7.将本地分支跟踪服务器分支
+git branch --set-upstream-to=origin/远程分支名称 本地分支名称
+8.查看当前git状态：git status。
+9.从远程分支上拉取代码：git pull origin 分支名称
+以上大概就是使用过程。
